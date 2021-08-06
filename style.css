@@ -1,0 +1,18 @@
+body {
+    background-image: url('assets/fond.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.lien {
+    text-decoration: none;
+    border-bottom: solid;
+    border-width: 0;
+    color:rgb(0, 0, 0);
+    transition: border-width 0.15s ease-in-out 0s, color 0.15s ease-in-out 0s;
+}
+.lien:hover {
+    border-width: 3px;
+    color:rgb(19, 15, 63);
+}
+
