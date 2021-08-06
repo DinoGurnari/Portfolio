@@ -7,6 +7,7 @@
         <meta name="description" content="Portfolio de Dino Gurnari">
         <meta name="keywords" content="HTML, CSS, JavaScript, Porfolio">
         <meta name="author" content="Dino Gurnari">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,7 +15,11 @@
 
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
         <link rel="stylesheet" href="style.css">
-        <style></style>
+        <style>
+            body, h1, h2, h3, h4, h5, h6 {
+                font-family: Helvetica, Arial, sans-serif;
+            }
+        </style>
 
         <script src="https://www.w3schools.com/lib/w3.js"></script> 
         <script src="script.js"></script>
@@ -31,7 +36,7 @@
 
     <body onload="w3.hide('.carte');w3.show('#about')">
         <!-- Navigation -->
-        <div class="w3-bar w3-black">
+        <div class="w3-bar w3-large w3-black">
             <button onclick="w3.hide('.carte');w3.show('#about')" class="w3-bar-item w3-button w3-hover-white">About Me</button>
             <button onclick="w3.hide('.carte');w3.show('#edx')" class="w3-bar-item w3-button w3-hover-white">Education & Experience</button>
             <button onclick="w3.hide('.carte');w3.show('#pe')" class="w3-bar-item w3-button w3-hover-white">Professional English</button>
@@ -43,7 +48,7 @@
         <!-- Content -->
         <div class="w3-container" style="margin:5% 10% 5% 10%;">
             <div id="about" class="carte w3-card-4 w3-white w3-display-container w3-center" style="min-height: 720px;">
-                <header class="w3-padding w3-container">
+                <header class="w3-padding w3-margin-bottom w3-container">
                     <h1>About Me</h1>
                 </header>
                 <img src="assets/moi.jpg" alt="Moi" style="max-width: 20%;"/>
@@ -52,21 +57,28 @@
                 </div>
             </div>
 
-            <div id="edx" class="carte w3-card-4 w3-white w3-display-container w3-center" style="min-height: 720px;">
-                <header class="w3-padding w3-container">
-                    <h1>Header</h1>
-                </header>
-                <div class="w3-padding w3-container" style="width:60%; margin-left:20%; font-size: large;">
-                    <p>Lorem ipsum...</p>
+            <div id="edx" class="carte w3-row w3-card-4 w3-white w3-display-container w3-center" style="min-height: 720px;">
+                <div class="w3-half w3-container">
+                    <header class="w3-padding w3-margin-bottom w3-container">
+                        <h1>Education</h1>
+                    </header>
+                    <div class="w3-padding w3-container" style="width:60%; margin-left:20%; font-size: large;">
+                        <p>Lorem ipsum...</p>
+                    </div>
                 </div>
-                <footer class="w3-padding w3-display-bottommiddle">
-                    <h5>Footer</h5>
-                </footer>
+                <div class="w3-half w3-container">
+                    <header class="w3-padding w3-margin-bottom w3-container">
+                        <h1>Experience</h1>
+                    </header>
+                    <div class="w3-padding w3-container" style="width:60%; margin-left:20%; font-size: large;">
+                        <p>Lorem ipsum...</p>
+                    </div>
+                </div>
             </div>
 
             <div id="pe" class="carte w3-card-4 w3-white w3-display-container w3-center" style="min-height: 720px;">
-                <header class="w3-padding w3-container">
-                    <h1>Header</h1>
+                <header class="w3-padding w3-margin-bottom w3-container">
+                    <h1>Professional English</h1>
                 </header>
                 <div class="w3-padding w3-container" style="width:60%; margin-left:20%; font-size: large;">
                     <p>Lorem ipsum...</p>
@@ -77,8 +89,8 @@
             </div>
 
             <div id="lm" class="carte w3-card-4 w3-white w3-display-container w3-center" style="min-height: 720px;">
-                <header class="w3-padding w3-container">
-                    <h1>Header</h1>
+                <header class="w3-padding w3-margin-bottom w3-container">
+                    <h1>Leadership & Management</h1>
                 </header>
                 <div class="w3-padding w3-container" style="width:60%; margin-left:20%; font-size: large;">
                     <p>Lorem ipsum...</p>
@@ -89,8 +101,8 @@
             </div>
 
             <div id="plus" class="carte w3-card-4 w3-white w3-display-container w3-center" style="min-height: 720px;">
-                <header class="w3-padding w3-container">
-                    <h1>Header</h1>
+                <header class="w3-padding w3-margin-bottom w3-container">
+                    <h1>More</h1>
                 </header>
                 <div class="w3-padding w3-container" style="width:60%; margin-left:20%; font-size: large;">
                     <p>Lorem ipsum...</p>
@@ -101,14 +113,15 @@
             </div>
 
             <div id="contact" class="carte w3-card-4 w3-white w3-display-container w3-center" style="min-height: 720px;">
-                <header class="w3-padding w3-container">
+                <header class="w3-padding w3-margin-bottom w3-container">
                     <h1>Contact Me</h1>
                 </header>
                 <div class="w3-padding-64 w3-container" style="width:60%; margin-left:20%">
-                    <i class="fas fa-envelope w3-xxlarge"></i> <a class="lien w3-xlarge" href="mailto:dinogurnari@gmail.com">dinogurnari@gmail.com</a><br/>
+                    <i class="fas fa-envelope w3-xxlarge"></i> <a class="lien w3-xlarge" href="mailto:dinogurnari@gmail.com">dinogurnari@gmail.com</a>
+                    <br/><br/>
                     <i class="fas fa-mobile-alt w3-xxlarge"></i> <a class="lien w3-xlarge" href="tel:+33623884561">06 23 88 45 61</a>
                 </div>
-                <div class="w3-padding w3-container w3-xxxlarge" style="width:60%; margin-left:20%">
+                <div class="w3-padding w3-container w3-jumbo" style="width:60%; margin-left:20%">
                     <a href="https://github.com/DinoGurnari"><i class="fab fa-github w3-padding"></i></a> <a href="https://www.linkedin.com/in/dinogurnari/"><i class="fab fa-linkedin-in w3-padding"></i></a>
                 </div>
                 <footer class="w3-padding w3-display-bottommiddle">
