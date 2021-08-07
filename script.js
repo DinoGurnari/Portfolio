@@ -1,9 +1,9 @@
-// import * as w3 from "https://www.w3schools.com/lib/w3.js"
+function onHoverLogo() {
+    var img = document.getElementById("logoBar");
+    img.src = "assets/icondg.ico";
+}
 
-// function setCard(cardId) {
-//     var cardList = document.getElementsByClassName(".carte");
-//     cardList.forEach(card => {
-//         w3.hide(card);
-//     });
-//     w3.show(document.getElementById('#about'));
-// }
+function offHoverLogo() {
+    var img = document.getElementById("logoBar");
+    img.src = "assets/iconNB.ico";
+}

@@ -37,12 +37,13 @@
     <body onload="w3.hide('.carte');w3.show('#about')">
         <!-- Navigation -->
         <div class="w3-bar w3-large w3-black">
-            <button onclick="w3.hide('.carte');w3.show('#about')" class="w3-bar-item w3-button w3-hover-white">About Me</button>
-            <button onclick="w3.hide('.carte');w3.show('#edx')" class="w3-bar-item w3-button w3-hover-white">Education & Experience</button>
-            <button onclick="w3.hide('.carte');w3.show('#pe')" class="w3-bar-item w3-button w3-hover-white">Professional English</button>
-            <button onclick="w3.hide('.carte');w3.show('#lm')" class="w3-bar-item w3-button w3-hover-white">Leadership & Management</button>
-            <button onclick="w3.hide('.carte');w3.show('#plus')" class="w3-bar-item w3-button w3-hover-white">More</button>
-            <button onclick="w3.hide('.carte');w3.show('#contact')" class="w3-bar-item w3-button w3-hover-white">Contact</button>
+            <button onclick="w3.hide('.carte');w3.show('#about')" class="w3-bar-item w3-button w3-padding w3-hover-white">About Me</button>
+            <button onclick="w3.hide('.carte');w3.show('#edx')" class="w3-bar-item w3-button w3-padding w3-hover-white">Education & Experience</button>
+            <button onclick="w3.hide('.carte');w3.show('#pe')" class="w3-bar-item w3-button w3-padding w3-hover-white">Professional Project</button>
+            <button onclick="w3.hide('.carte');w3.show('#lm')" class="w3-bar-item w3-button w3-padding w3-hover-white">Leadership & Management</button>
+            <button onclick="w3.hide('.carte');w3.show('#plus')" class="w3-bar-item w3-button w3-padding w3-hover-white">More</button>
+            <button onclick="w3.hide('.carte');w3.show('#contact')" class="w3-bar-item w3-button w3-padding w3-hover-white">Contact</button>
+            <img id="logoBar" src="assets/iconNB.ico" class="w3-right" style="max-width:23px;margin: 10px" onmouseover="onHoverLogo()" onmouseout="offHoverLogo()">
         </div> 
 
         <!-- Content -->
@@ -53,39 +54,62 @@
                 </header>
                 <img src="assets/moi.jpg" alt="Moi" class="w3-round w3-margin-bottom" style="max-width: 20%;"/>
                 <div class="w3-padding w3-container" style="width:50%; margin-left:25%">
-                    <h5>I was born in the Paris region but raised under Provence's Sun where I grew up and did all my studies until going to ENSEEIHT to persue my dream of becoming engineer in Computer Science.</h5>
+                    <h4>Dino Gurnari</h4>
+                    <h5>Computer Engineering student at ENSEEIHT<br/>
+                        Toulouse, France</h5>
+                    <br/>
+                    <p>I was born in the Paris region but raised under Provence's Sun where I grew up and did all my studies until going to ENSEEIHT to persue my dream of becoming engineer in Computer Science.</p>
                 </div>
             </div>
 
-            <div id="edx" class="carte w3-row w3-card-4 w3-white w3-display-container w3-center" style="min-height: 720px;">
+            <div id="edx" class="carte w3-row w3-card-4 w3-white w3-display-container" style="min-height: 720px;">
                 <div class="w3-half w3-container">
-                    <header class="w3-padding w3-margin-bottom w3-container">
+                    <header class="w3-padding w3-margin-bottom w3-container w3-center">
                         <h1>Education</h1>
                     </header>
                     <div class="w3-padding w3-container" style="width:60%; margin-left:20%; font-size: large;">
-                        <p>Check my CV</p>
+                        <h4>2015</h4>
+                        <h5>FFBB Referee School, <i>Comité des Bouches-du-Rhones</i></h5>
+                        <br/>
+                        <h4>2015-2017</h4>
+                        <h5>Scientific Baccalaureate, <i>Lycée International Georges DUBY,</i>
+                        Mention Bien</h5>
+                        <br/>
+                        <h4>2017-2020</h4>
+                        <h5>Classe Préparatoire PC, <i>Lycée Militaire d'Aix-en-Provence</i></h5>
+                        <br/>
+                        <h4>2020-2023</h4>
+                        <h5>Computer Science, <i>ENSEEIHT</i>, Toulouse</i></h5>
                     </div>
                 </div>
                 <div class="w3-half w3-container">
-                    <header class="w3-padding w3-margin-bottom w3-container">
+                    <header class="w3-padding w3-margin-bottom w3-container w3-center">
                         <h1>Experience</h1>
                     </header>
                     <div class="w3-padding w3-container" style="width:60%; margin-left:20%; font-size: large;">
-                        <p>Lorem ipsum...</p>
+                        <h4>Dec. 2013</h4>
+                        <h5>BioPolis, Aubagne</h5>
+                        <br/>
+                        <h4>June. 2015</h4>
+                        <h5>PTC, Aix les Milles</h5>
+                        <br/>
+                        <h4>2015-2017</h4>
+                        <h5>BasketBall Referee, FFBB, Bouches-du-Rhones</h5>
+                        <br/>
+                        <h4>Jul.-Aug. 2021</h4>
+                        <h5>Internship at <i>Société Générale</i>, Paris</h5>
                     </div>
                 </div>
             </div>
 
             <div id="pe" class="carte w3-card-4 w3-white w3-display-container w3-center" style="min-height: 720px;">
                 <header class="w3-padding w3-margin-bottom w3-container">
-                    <h1>Professional English</h1>
+                    <h1>Professional Project</h1>
                 </header>
                 <div class="w3-padding w3-container" style="width:60%; margin-left:20%; font-size: large;">
-                    <p>Lorem ipsum...</p>
+                    <iframe src="assets/CV-DinoGurnari.pdf" width="100%" height="500px">
+                    </iframe>
                 </div>
-                <footer class="w3-padding w3-display-bottommiddle">
-                    <h5>Footer</h5>
-                </footer>
             </div>
 
             <div id="lm" class="carte w3-card-4 w3-white w3-display-container" style="min-height: 720px;">
@@ -110,26 +134,54 @@
                     <div class="w3-padding w3-container" style="width:60%; margin-left:20%;">
                         <h3>2020</h3>
                         <h5>Recovery subsystem at ASTRE (Association Spatiale Toulousaine de Recherche Étudiante) on the ASTRE'LAUNCH experimental rocket project</h5>
-                        <img src="assets/astre'launch.webp" alt="ASTRE'Launch" style="max-width: 100px;">
+                        <img src="assets/astre'launch.webp" alt="ASTRE'Launch" style="max-width: 100px;margin-left: 40%;">
                     </div>
                     <div class="w3-padding w3-container" style="width:60%; margin-left:20%;">
                         <h3>2021-2022</h3>
                         <h5>Vice-president of the Foy' in charge of logistics for the student association</h5>
-                        <img src="assets/foy.png" alt="Foy'" style="max-width: 100px;">
+                        <img src="assets/foy.png" alt="Foy'" style="max-width: 100px;margin-left: 40%;">
                     </div>
                 </div>
             </div>
 
-            <div id="plus" class="carte w3-card-4 w3-white w3-display-container w3-center" style="min-height: 720px;">
-                <header class="w3-padding w3-margin-bottom w3-container">
+            <div id="plus" class="carte w3-card-4 w3-white w3-display-container" style="min-height: 720px;">
+                <header class="w3-padding w3-margin-bottom w3-container w3-center">
                     <h1>More</h1>
                 </header>
-                <div class="w3-padding w3-container" style="width:60%; margin-left:20%; font-size: large;">
-                    <p>Lorem ipsum...</p>
+                <div class="w3-half w3-container">
+                    <div class="w3-padding w3-container" style="width:60%; margin-left:20%;">
+                        <h2>Foreign Language</h2>
+
+                        <h3>English</h3>
+                        <h4>2015</h4>
+                        <h5>Language exchange with Irish students</h5>
+                        <h4>2016</h4>
+                        <h5>Cambridge FCE, Overall Score : 169</h5>
+                        <br/>
+                        <h3>Italian</h3>
+                        <h4>2014</h4>
+                        <h5>Language exchange with italian students</h5>
+                    </div>
                 </div>
-                <footer class="w3-padding w3-display-bottommiddle">
-                    <h5>Footer</h5>
-                </footer>
+                <div class="w3-half w3-container">
+                    <div class="w3-padding w3-container" style="width:60%; margin-left:20%;">
+                        <h2>Sport</h2>
+                        <h5>BasketBall, 4 years in competition<br/>
+                            American FootBall<br/>
+                            Rugby, University<br/>
+                            Natation<br/>        
+                            Running<br/>                
+                            CrossFit</h5>
+                    </div>
+                    <div class="w3-padding w3-container" style="width:60%; margin-left:20%;">
+                        <h2>Interest</h2>
+                        <h5>GameDev<br/>  
+                            Guitar<br/>  
+                            Automobile<br/>
+                            RPG<br/>  
+                            Litterature</h5>
+                    </div>
+                </div>
             </div>
 
             <div id="contact" class="carte w3-card-4 w3-white w3-display-container w3-center" style="min-height: 720px;">
@@ -137,9 +189,9 @@
                     <h1>Contact Me</h1>
                 </header>
                 <div class="w3-padding-64 w3-container" style="width:60%; margin-left:20%">
-                    <i class="fas fa-envelope w3-xxlarge"></i> <a class="lien w3-xlarge" href="mailto:dinogurnari@gmail.com">dinogurnari@gmail.com</a>
+                    <i class="fas fa-envelope w3-xlarge"></i> <a class="lien w3-xlarge" href="mailto:dinogurnari@gmail.com">dinogurnari@gmail.com</a>
                     <br/><br/>
-                    <i class="fas fa-mobile-alt w3-xxlarge"></i> <a class="lien w3-xlarge" href="tel:+33623884561">06 23 88 45 61</a>
+                    <i class="fas fa-mobile-alt w3-xlarge"></i> <a class="lien w3-xlarge" href="tel:+33623884561">06 23 88 45 61</a>
                 </div>
                 <div class="w3-padding w3-container w3-jumbo" style="width:60%; margin-left:20%">
                     <a href="https://github.com/DinoGurnari"><i class="fab fa-github w3-padding"></i></a> <a href="https://www.linkedin.com/in/dinogurnari/"><i class="fab fa-linkedin-in w3-padding"></i></a>
